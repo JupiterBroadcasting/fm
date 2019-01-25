@@ -9,7 +9,7 @@ docker build -t fm .
 ```
 
 #### Configuration
-The following environmental variables are available:
+The following environment variables are available:
 - RTMP_HOST
 - RTMP_PORT
 - RTMP_MOUNT
