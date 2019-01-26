@@ -32,8 +32,8 @@ docker run --rm \
            -e ICECAST_MOUNT=... \
            -e ICECAST_USER=... \
            -e ICECAST_PASS=... \
-           -e BITRATE
-           -p $YOUR_RTMP_PORT:$YOUR_RTMP_PORT
+           -e BITRATE=... \
+           -p $YOUR_RTMP_PORT:$YOUR_RTMP_PORT \
            fm
 ```
 
@@ -49,7 +49,7 @@ docker run --name fm \
            -e ICECAST_MOUNT=... \
            -e ICECAST_USER=... \
            -e ICECAST_PASS=... \
-           -e BITRATE
-           -p $YOUR_RTMP_PORT:$YOUR_RTMP_PORT
+           -e BITRATE=... \
+           -p $YOUR_RTMP_PORT:$YOUR_RTMP_PORT \
            fm
 ```
