@@ -18,6 +18,7 @@ The following environment variables are available:
 - ICECAST_MOUNT
 - ICECAST_USER
 - ICECAST_PASS
+- BITRATE
 
 #### Test Run
 ```
@@ -31,5 +32,24 @@ docker run --rm \
            -e ICECAST_MOUNT=... \
            -e ICECAST_USER=... \
            -e ICECAST_PASS=... \
+           -e BITRATE
+           -p $YOUR_RTMP_PORT:$YOUR_RTMP_PORT
+           fm
+```
+
+#### Run
+```
+docker run --name fm \
+           -d \
+           -e RTMP_HOST=... \
+           -e RTMP_PORT=... \
+           -e RTMP_MOUNT=... \
+           -e ICECAST_HOST=... \
+           -e ICECAST_PORT=... \
+           -e ICECAST_MOUNT=... \
+           -e ICECAST_USER=... \
+           -e ICECAST_PASS=... \
+           -e BITRATE
+           -p $YOUR_RTMP_PORT:$YOUR_RTMP_PORT
            fm
 ```
